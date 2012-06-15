@@ -76,37 +76,34 @@
       //console.debug('loaded '+$.fn.jquery);
       load_file('http://29-steps-uk.github.com/tumblr-colorbox/javascripts/jquery.colorbox.js', function() {
         
-				var tumblr_pics = $('a[href*=".media.tumblr.com/tumblr"]>img[src*=".media.tumblr.com/tumblr"]').parent();
+        var tumblr_pics = $('a[href*=".media.tumblr.com/tumblr"]>img[src*=".media.tumblr.com/tumblr"]').parent();
 
-				$.each(tumblr_pics, function(){
-					//console.log($(this))
+	$.each(tumblr_pics, function(){
+	  //console.log($(this))
 					
-					var rel;
-					var img_title;
+	  var rel;
+	  var img_title;
 					
-					if($(this).attr('class') == 'photoset_photo' ){
-					  //console.log('found photoset photo')
-					  rel = $(this).attr('id');
-					 }else{
-						rel = 'nofollow';
-					}
+	  if($(this).attr('class') == 'photoset_photo' ){
+	    //console.log('found photoset photo')
+	    rel = $(this).attr('id');
+	  }else{
+	    rel = 'nofollow';
+	  }
 					
-					img_title = $(this).find('img').attr('alt');
+	  img_title = $(this).find('img').attr('alt');
 					
-					$(this).colorbox({
-						rel: rel,
-						photo: true,
-						transition:"elastic",
-						scrolling: false,
-						scalePhotos: true,
-						title: img_title
-					});
-					
-					
-				});
+	  $(this).colorbox({
+	    rel: rel,
+	    photo: true,
+	    transition:"elastic",
+	    scrolling: false,
+	    scalePhotos: true,
+	    title: img_title
+	  });
 					
 					
-				//console.debug(tumblr_pics.length+' tumblr pictures colorboxed');
+        });// end each
 				
         
       });
