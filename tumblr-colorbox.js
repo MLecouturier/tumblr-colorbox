@@ -74,7 +74,7 @@
 	
       $ = jQuery.noConflict();
       //console.debug('loaded '+$.fn.jquery);
-      load_file('http://29stepsblog.s3.amazonaws.com/jquery.colorbox.js', function() {
+      load_file('http://29-steps-uk.github.com/tumblr-colorbox/javascripts/jquery.colorbox.js', function() {
         
 				var tumblr_pics = $('a[href*=".media.tumblr.com/tumblr"]>img[src*=".media.tumblr.com/tumblr"]').parent();
 
@@ -116,6 +116,7 @@
   });
   
   // Add CSS
-  load_file('http://29stepsblog.s3.amazonaws.com/colorbox.css');
+  load_file('http://29-steps-uk.github.com/tumblr-colorbox/stylesheets/colorbox.css');
   
 })();
+
