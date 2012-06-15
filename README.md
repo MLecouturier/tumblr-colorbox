@@ -10,7 +10,10 @@ Creates a lightbox for images on your Tumblr blog using colorbox.js.
 Usage
 ------------
 
-Reference [http://29-steps-uk.github.com/tumblr-colorbox/javascripts/tumblr-colorbox.js](http://29-steps-uk.github.com/tumblr-colorbox/javascripts/tumblr-colorbox.js) inside your tumblr theme. You will need to edit the theme to do so
+Reference [http://29-steps-uk.github.com/tumblr-colorbox/javascripts/tumblr-colorbox.js](http://29-steps-uk.github.com/tumblr-colorbox/javascripts/tumblr-colorbox.js) inside the head section of your tumblr theme. You will need to edit the theme to do so.
+    
+    <script type"text/javascript" src='http://29-steps-uk.github.com/tumblr-colorbox/javascripts/tumblr-colorbox.js'></script>
+    
 
 
 Motivation
